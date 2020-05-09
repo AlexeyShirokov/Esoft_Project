@@ -11,7 +11,7 @@ using System.Xml.Linq;
 
 namespace Esoft_Project
 {
-    public partial class FormClient : Form
+    public partial class FormClient : System.Windows.Forms.Form
     {
         public FormClient()
         {
@@ -26,7 +26,7 @@ namespace Esoft_Project
             {
                 ListViewItem item = new ListViewItem(new string[]
                     {
-                      clientsSet.id.ToString(),
+                      clientsSet.Id.ToString(),
                       clientsSet.FirstName,
                       clientsSet.MiddleName,
                       clientsSet.LastName,
@@ -115,6 +115,11 @@ namespace Esoft_Project
         }
 
         private void textBoxMiddleName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelMiddleName_Click(object sender, EventArgs e)
         {
 
         }
